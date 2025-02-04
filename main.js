@@ -3,18 +3,6 @@ const imageOne = document.querySelector(".image-1");
 const imageTwo = document.querySelector(".image-2");
 const btnYes = document.querySelector(".btn-yes");
 const btnNo = document.querySelector(".btn-no");
-const sounds = ['kiss']
-
-sounds.forEach(sound => {
-     const btn = document.createElement('button')
-     btn.classList.add('btn')
-
-     btn.innerText = sound
-
-     btn.AddEventListener('click', () => { document.getElementById(sound).play()
-
-     document.getElementById('buttons').appendChild(btn)
-})
 
 function getRandomNumber(min, max) {
   // Calculate the random number between min and max (inclusive)
