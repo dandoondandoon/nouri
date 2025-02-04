@@ -19,4 +19,11 @@
     </div>
     <script src="main.js"></script>
   </body>
+  <script>
+  let audioPlayer = document.getElementById('audioPlayer');
+  function play(){
+    audioPlayer.load(); // reload the audio player so that the audio restarts from the beginning on each click
+    audioPlayer.play();
+  }
+</script>
 </html>
