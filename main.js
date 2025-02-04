@@ -3,6 +3,9 @@ const imageOne = document.querySelector(".image-1");
 const imageTwo = document.querySelector(".image-2");
 const btnYes = document.querySelector(".btn-yes");
 const btnNo = document.querySelector(".btn-no");
+const beepSound = document.getElementById('beep-sound');
+function playBeep() {
+    beepSound.play();
 
 function getRandomNumber(min, max) {
   // Calculate the random number between min and max (inclusive)
@@ -38,3 +41,6 @@ btnYes.addEventListener("click", (e) => {
   imageOne.classList.add("hide");
   imageTwo.classList.remove("hide");
 });
+
+btnYes.addEventListener('click', playBeep);
+</script>
