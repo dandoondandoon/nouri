@@ -37,9 +37,9 @@ body {
 .image-1,
 .image-2 {
   position: absolute;
-  top: 100%;
+  top: 300%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1.5);
+  transform: translate(-50%, -50%);
 }
 
 .image-1 {
